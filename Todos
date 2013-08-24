@@ -1,0 +1,6 @@
+USER DOCKER !!!
+implement 0mq.
+Web interface.
+refactor crawler : one worker should go from hosts to hosts
+	 	  the others should iterate on one host
+i should may be make them  compete to see which is better

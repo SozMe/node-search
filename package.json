@@ -1,0 +1,23 @@
+{
+  "name": "tls-se",
+  "version": "0.0.1",
+  "dependencies": {
+    "request": "2.25.x",
+    "mongous": "0.2.4",
+    "crawler": "0.2.5",
+    "cheerio": "0.12.x"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "description": "stupid search engine",
+  "main": "crawler.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "me",
+  "license": "BSD"
+}
