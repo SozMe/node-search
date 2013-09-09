@@ -10,10 +10,10 @@ eventEmitter.on("AllparseFinished", parse);
 
 var get_title = function ($) {
   var titles = $("title");
-  var ret = [];
+  var ret = "";
 
   for (var i = titles.length - 1; i >= 0; i--) {
-    ret.push($(titles[i]).text());
+    ret += $(titles[i]).text() + "\t";
   }
   titles = null;
   return ret;
@@ -21,11 +21,11 @@ var get_title = function ($) {
 
 var get_keywords = function ($) {
   var keywords = $("meta[name=keywords]");
-  var ret = [];
+  var ret = "";
 
   for (var i = keywords.length - 1; i >= 0; i--) {
     // ret.push($(keywords[i]).attr("content"));
-    ret.push($(keywords[i]).attr("content"));
+    ret += $(keywords[i]).attr("content") + "\t";
   }
   keywords = null;
   return ret;
@@ -33,11 +33,11 @@ var get_keywords = function ($) {
 
 var get_description = function ($) {
   var descriptions = $("meta[name=description]");
-  var ret = [];
+  var ret = "";
 
   for (var i = descriptions.length - 1; i >= 0; i--) {
     // ret.push($(descriptions[i]).attr("content"));
-    ret.push($(descriptions[i]).attr("content"));
+    ret += $(descriptions[i]).attr("content") + "\t";
   }
   descriptions = null;
   return ret;
@@ -45,11 +45,11 @@ var get_description = function ($) {
 
 var get_lang = function ($) {
   var langs = $("html");
-  var ret = [];
+  var ret = "";
 
   for (var i = langs.length - 1; i >= 0; i--) {
     // ret.push($(langs[i]).attr("content"));
-    ret.push($(langs[i]).attr("lang"));
+    ret += $(langs[i]).attr("lang") + "\t";
   }
   lans = null;
   return ret;
@@ -57,11 +57,11 @@ var get_lang = function ($) {
 
 var get_h1 = function ($) {
   var h1s = $("h1");
-  var ret = [];
+  var ret = "";
 
   for (var i = h1s.length - 1; i >= 0; i--) {
     // ret.push($(h1s[i]).attr("content"));
-    ret.push($(h1s[i]).text());
+    ret += $(h1s[i]).text() + "\t";
   }
   h1s = null;
   return ret;
@@ -69,11 +69,11 @@ var get_h1 = function ($) {
 
 var get_h2 = function ($) {
   var h2s = $("h2");
-  var ret = [];
+  var ret = "";
 
   for (var i = h2s.length - 1; i >= 0; i--) {
     // ret.push($(h2s[i]).attr("content"));
-    ret.push($(h2s[i]).text());
+    ret += $(h2s[i]).text() + "\t";
   }
   h2s = null;
   return ret;
@@ -81,11 +81,11 @@ var get_h2 = function ($) {
 
 var get_h3 = function ($) {
   var h3s = $("h3");
-  var ret = [];
+  var ret = "";
 
   for (var i = h3s.length - 1; i >= 0; i--) {
     // ret.push($(h3s[i]).attr("content"));
-    ret.push($(h3s[i]).text());
+    ret += $(h3s[i]).text() + "\t";
   }
   h3s = null;
   return ret;
